@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main () {
+int main () 
+{
     float lado_quadrado,area_quadrado;
     printf ("entre com o lado do quadrado:");
     scanf("%f",&lado_quadrado);

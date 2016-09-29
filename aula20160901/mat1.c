@@ -13,7 +13,7 @@ int main()
     scanf("%lf",&P2_x);
     printf ("Entre com y de P2: ");
     scanf("%lf",&P2_y);
-    distancia = sqrt (pow(P2_x-P1_x, 2.)) + (pow(P2_y-P1_y, 2.));
+    distancia = sqrt ((pow(P2_x-P1_x, 2)) + (pow(P2_y-P1_y, 2)));
     printf("A distancia entre eles e %lf.\n", distancia);
     return 0;
 }

@@ -4,7 +4,7 @@
 int main()
 {
     float a, b, c, angulo;
-    printf("Informe dois lados do triangulo e o angulo: \n");
+    printf("Informe dois lados do triangulo e o angulo em radianos: \n");
     scanf("%f",&b);
     scanf("%f", &c);
     scanf("%f", &angulo);

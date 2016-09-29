@@ -11,8 +11,9 @@ int main () {
 
 soma= num + rand ()%2;
    if (soma%2 == 0)
+   {
      printf( "é par");
-
+   }
     else
         printf( "E impar!");
 

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main () {
 
-int B, P, pot,i, aux=0;
+int B, P, pot,i;
 printf("Digite a base e o expoente respectivamente:\n");
 scanf("%d", &B);
 scanf("%d", &P);

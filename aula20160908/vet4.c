@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 10000
+
 int main ()
 {
     srand (time(0));
     unsigned int numero;
     float aleatorios[N];
-    float soma=0.0f, media;
+    float vet[1000000];
+    //in road
     int i;
-    printf(" Numero inteiro nao negativo\n");
-    scanf("%u",&numero);
+    printf(" Numero \n");
+    scanf("%d",&numero);
     for (i=0;i<N;i++)
         aleatorios [i] = rand ()%numero +1;
     for (i=0;i<N;i++)
