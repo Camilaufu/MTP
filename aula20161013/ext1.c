@@ -4,15 +4,20 @@ int tamanho=0;
 
 float * recebeNumero(float * vetor);
 float media(float * vetor, int tamanho);
+float maximo(int tamanho, float * vetor);
+float minimo(int tamanho, float * vetor);
 
 
 int main (){
    float * vetor=NULL;
    int opc;
+
    do {
         printf( "entre com um numero: ");
         vetor = recebeNumero(vetor);
         printf("media = %f\n", media(vetor, tamanho));
+        printf("Maior = %f\n", maximo(tamanho,vetor));
+        printf("Menor = %f\n", minimo(tamanho,vetor));
 
         printf("outro ? (0 nao , 1 sim):");
         scanf("%d", &opc);
@@ -39,6 +44,30 @@ for(i=0; i<tamanho;i++)
 return soma/tamanho;
 }
 
+float maximo(int tamanho, float * vetor){
+    int x;
+    if (tamanho == 1)
+        return vetor[0];
+   else {
+        x = maximo (tamanho-1, vetor);
+   if (x > vetor[tamanho-1])
+         return x;
+      else
+         return vetor[tamanho-1];
+   }
+}
 
+float minimo(int tamanho, float * vetor){
+    int x;
+    if (tamanho == 1)
+        return vetor[0];
+   else {
+        x = maximo (tamanho-1, vetor);
+   if (x < vetor[tamanho-1])
+         return x;
+      else
+         return vetor[tamanho-1];
+   }
+}
 
 
